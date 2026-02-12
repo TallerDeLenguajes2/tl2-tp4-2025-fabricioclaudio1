@@ -8,7 +8,7 @@ public class AccesoADatosPedidos
 {
     public List<Pedido> Obtener() //json -> string -> objeto
     {
-        const string pathPedido = "../Other/pedido.json";
+        const string pathPedido = "../Other/pedidos.json";
         string jsonDocument = HelperDeJson.LeerArchivoJson(pathPedido);
         var pedidos = JsonSerializer.Deserialize<List<Pedido>>(jsonDocument);
 
